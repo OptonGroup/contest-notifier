@@ -1,7 +1,8 @@
-// github:@OptonGroup development
-// tg:@active_botane
-
 <?php
+    // github:@OptonGroup development
+    // tg:@active_botane
+    header('Content-type: application/json');
+
     function set_time(&$contest){
         $n = -$contest->relativeTimeSeconds;
         $secs = $n%60;
@@ -30,7 +31,7 @@
             $best_contest = $contest;
             $best_contest->status = "OK";
         }else{
-            if ($contest->relativeTimeSeconds < 0 && $best_contest->relativeTimeSeconds < $contest->relativeTimeSeconds){
+            if ($best_contest->relativeTimeSeconds < $contest->relativeTimeSeconds && $contest->relativeTimeSeconds < 0){
                 $best_contest = $contest;
                 $best_contest->status = "OK";
             }
@@ -38,7 +39,5 @@
         set_time($best_contest);
     }
     $post_data->contest = $best_contest;
-
-	header('Content-type: application/json');
 	echo json_encode($post_data);
 ?>
