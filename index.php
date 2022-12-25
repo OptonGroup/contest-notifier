@@ -39,5 +39,5 @@
         set_time($best_contest);
     }
     $post_data->contest = $best_contest;
-	echo json_encode($post_data);
+    echo json_encode($post_data);
 ?>
