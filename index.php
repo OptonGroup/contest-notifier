@@ -2,6 +2,9 @@
     // github:@OptonGroup development
     // tg:@active_botane
     header('Content-type: application/json');
+    ini_set('display_errors', 0);
+    ini_set('display_startup_errors', 0);
+    error_reporting(E_ALL);
 
     function set_time(&$contest){
         $n = -$contest->relativeTimeSeconds;
