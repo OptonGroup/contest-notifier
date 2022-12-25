@@ -27,3 +27,6 @@ For example you can use it in widgets(IOS and Android) <br>
 -> Simplest app is [widgetopia](https://widgetopia.io) <br>
 -> The best IOS app is [widgeridoo](https://apps.apple.com/us/app/widgeridoo/id1531359008)<br>
 You can also create a telegram bot that will remind you 20 minutes before the start of the contest
+
+## Try it
+Test website with a script [here](http://contest-notifier.000webhostapp.com)
